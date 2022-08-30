@@ -8,19 +8,29 @@
       "id": "1",
       "createdAt": 158151551121,
       "name": "Kiara",
-      "type": "DOG"
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "2",
       "createdAt": 684213341832,
       "name": "Coli",
-      "type": "DOG"
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "3",
       "createdAt": 56416513161,
       "name": "Michi",
-      "type": "CAT"
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "4RNQSLN_I428BQULl21sK",
+      "createdAt": 1661778034614,
+      "name": "MAURICIO",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
     }
   ]
 }

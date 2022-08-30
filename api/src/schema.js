@@ -7,6 +7,7 @@ const typeDefs = gql`
     type User {
         id: ID!
         username: String!
+        pets: [Pet]
     }
 
     type Pet {
@@ -14,6 +15,7 @@ const typeDefs = gql`
         createdAt: String!
         name: String!
         type: String!
+        owner: User!
     }
 
     # Input fields to use on Filter
@@ -22,11 +24,26 @@ const typeDefs = gql`
         type: String
     } 
 
+    input UserInput {
+        username: String!
+    } 
+
     type Query {
         #(inputs: filters)
+        pet(input: PetInput): Pet
         pets(input: PetInput): [Pet]!
-        pet(input: PetInput): [Pet]
-    }  
+        user(input: UserInput): User
+        users(input: UserInput): [User]!
+    } 
+
+    input newPetInput {
+        name: String!
+        type: String!
+    } 
+
+    type Mutation {
+        newPet(input: newPetInput!): Pet!
+    }
 `;
 
 module.exports = typeDefs
