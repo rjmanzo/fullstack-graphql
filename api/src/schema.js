@@ -16,12 +16,14 @@ const typeDefs = gql`
         name: String!
         type: String!
         owner: User!
+        img: String
     }
 
     # Input fields to use on Filter
     input PetInput {
         name: String
         type: String
+        img: String
     } 
 
     input UserInput {
